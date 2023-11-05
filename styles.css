@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   background-color: #f0f0f0;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   color: #333;
+   margin-top: 20px;
+}
+
+h2 {
+   color: #666;
+   margin-top: 20px;
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.left, .right {
+   flex: 1;
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+   text-align: left;
+}
+
+.right {
+   text-align: center;
+}
+
+.upload-button {
+   font-weight: bold;
+   display: block;
+   cursor: pointer;
+   border: 1px solid #007BFF;
+   background-color: #007BFF;
+   color: #fff;
+   padding: 10px 20px;
+   margin: 10px auto;
+   max-width: 150px;
+}
+
+input[type="file"] {
+   display: none;
+}
+
+img#uploadedImage {
+   max-width: 100%;
+   display: none;
+   margin-top: 10px;
+}
+
+video#webcam {
+   max-width: 100%;
+   display: none;
+}
+
+div {
+   margin: 20px 0;
+}
+
+.webcam-button {
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   margin: 5px;
+}
+
+button:hover {
+   background-color: #0056b3;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accident Prediction Site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Accident Prediction Site</h1>
+
+    <div class="content">
+        <div class="left">
+            <h2>Upload an Image</h2>
+            <label for="imageInput" class="upload-button">Select Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+            <img id="uploadedImage" style="max-width: 100%; display: none;">
+            <p id="predictionResult" class="prediction">Prediction: -</p>
+        </div>
+
+        <div class="right">
+            <h2>Use Your Webcam</h2>
+            <video id="webcam" autoplay playsinline></video>
+            <div>
+                <button id="startWebcam" class="webcam-button">Start Webcam</button>
+                <button id="stopWebcam" class="webcam-button">Stop Webcam</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="script.js"></script>
+</body>
+</html>
